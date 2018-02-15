@@ -8,7 +8,7 @@ jobs:
       - run:
           name: docker linting
           command: /usr/bin/docker-lint Dockerfile
-  mdl-lint:
+  markdown-lint:
     docker:
       - image: vpgrp/linter:markdown-lint
     steps:
@@ -16,21 +16,9 @@ jobs:
       - run:
           name: markdown linting
           command: /usr/bin/markdown-lint .
-  markdown-lint:
-    docker:
-      - image: sdesbure/remark-lint:latest
-    steps:
-      - checkout
-      - run:
-          name: change path to markdown lint
-          command: "cd /usr/src/app"
-      - run:
-          name: markdown linting
-          command: "node_modules/.bin/remark --frail --use remark-preset-lint-recommended --use remark-preset-lint-consistent ${CIRCLE_WORKING_DIRECTORY}"
 workflows:
   version: 2
   lint:
     jobs:
       - docker-lint
-      - mdl-lint
       - markdown-lint
