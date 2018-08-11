@@ -28,7 +28,7 @@ Per default, the docker will give you the version number of yamllint.
 If you want to do linting you'll have to run a specific command:
 
 ```
-docker run --rm -v <path for yaml to lint>:/yaml sdesbure/yamllint yamllint youryamlfiles.yaml
+docker run --rm --mount type=bind,source="${PWD}",target=/myapp -w /myapp sdesbure/yamllint ./.circleci/config.yml
 ```
 
 ## In gitlab ci runner
