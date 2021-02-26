@@ -11,12 +11,12 @@ jobs:
           command: /usr/bin/docker-lint Dockerfile
   markdown-lint:
     docker:
-      - image: vpgrp/linter:markdown-lint
+      - image: markdownlint/markdownlint
     steps:
       - checkout
       - run:
           name: markdown linting
-          command: /usr/bin/markdown-lint .
+          command: mdl .
 workflows:
   version: 2
   lint:
