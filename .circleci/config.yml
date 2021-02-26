@@ -1,14 +1,6 @@
 ---
-version: 2
+version: 2.1
 jobs:
-  docker-lint:
-    docker:
-      - image: hadolint/hadolint
-    steps:
-      - checkout
-      - run:
-          name: docker linting
-          command: /bin/hadolint Dockerfile
   markdown-lint:
     docker:
       - image: markdownlint/markdownlint
@@ -17,9 +9,14 @@ jobs:
       - run:
           name: markdown linting
           command: mdl .
+
+orbs:
+  docker: circleci/docker@1.5.0
+
 workflows:
   version: 2
   lint:
     jobs:
-      - docker-lint
+      - docker/hadolint:
+          dockerfiles: Dockerfile
       - markdown-lint
