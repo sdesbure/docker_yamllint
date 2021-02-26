@@ -12,6 +12,7 @@ Used to perform yaml linting into gitlab ci runner
 "Get your own image badge on microbadger.com")
 [![version information](https://images.microbadger.com/badges/version/sdesbure/yamllint.svg)](https://microbadger.com/images/sdesbure/yamllint
 "Get your own version badge on microbadger.com")
+[![circle ci status](https://circleci.com/gh/sdesbure/docker_yamllint.svg?style=shield)](https://app.circleci.com/pipelines/github/sdesbure/docker_yamllint "view on Circle CI")
 
 ## How to use
 
