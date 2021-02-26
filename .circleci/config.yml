@@ -3,12 +3,12 @@ version: 2
 jobs:
   docker-lint:
     docker:
-      - image: vpgrp/linter:docker-lint
+      - image: hadolint/hadolint
     steps:
       - checkout
       - run:
           name: docker linting
-          command: /usr/bin/docker-lint Dockerfile
+          command: /bin/hadolint Dockerfile
   markdown-lint:
     docker:
       - image: markdownlint/markdownlint
