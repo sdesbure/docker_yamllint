@@ -15,10 +15,10 @@ https://microbadger.com/images/sdesbure/yamllint
 https://microbadger.com/images/sdesbure/yamllint
 "Get your own version badge on microbadger.com")
 [![circle ci status](https://circleci.com/gh/sdesbure/docker_yamllint.svg?style=shield)](
-https://app.circleci.com/pipelines/github/sdesbure/docker_yamllint 
+https://app.circleci.com/pipelines/github/sdesbure/docker_yamllint
 "view on Circle CI")
 [![pyup.io status](https://pyup.io/repos/github/sdesbure/docker_yamllint/shield.svg)](
-https://pyup.io/account/repos/github/sdesbure/docker_yamllint/ 
+https://pyup.io/account/repos/github/sdesbure/docker_yamllint/
 "view on PyuP.io")
 
 ## How to use
