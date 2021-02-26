@@ -8,9 +8,9 @@ Used to perform yaml linting into gitlab ci runner
 
 ## Docker image
 
-[![](https://images.microbadger.com/badges/image/sdesbure/yamllint.svg "image information")](https://microbadger.com/images/sdesbure/yamllint
+[![image information](https://images.microbadger.com/badges/image/sdesbure/yamllint.svg)](https://microbadger.com/images/sdesbure/yamllint
 "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/sdesbure/yamllint.svg "version information")](https://microbadger.com/images/sdesbure/yamllint
+[![version information](https://images.microbadger.com/badges/version/sdesbure/yamllint.svg)](https://microbadger.com/images/sdesbure/yamllint
 "Get your own version badge on microbadger.com")
 
 ## How to use
