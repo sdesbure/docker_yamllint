@@ -14,6 +14,6 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 WORKDIR /yaml
 COPY requirements.txt .
 
-RUN pip install --no-cache -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["yamllint", "--version"]
