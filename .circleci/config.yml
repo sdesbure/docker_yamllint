@@ -1,22 +1,12 @@
 ---
 version: 2.1
-jobs:
-  markdown-lint:
-    docker:
-      - image: markdownlint/markdownlint
-    steps:
-      - checkout
-      - run:
-          name: markdown linting
-          command: mdl .
-
 orbs:
   docker: circleci/docker@1.5.0
-
+  markdown: hux/markdown@0.0.23
 workflows:
   version: 2
   lint:
     jobs:
       - docker/hadolint:
           dockerfiles: Dockerfile
-      - markdown-lint
+      - markdown/lint
